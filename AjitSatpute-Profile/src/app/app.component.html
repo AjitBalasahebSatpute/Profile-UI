@@ -7,40 +7,28 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li>
-          <img id="modeToggle"
-          class="icon color-icon"
-          src="../../assets/images/theme_light.png"
-          src-light="../../assets/images/theme_light.png"
-          src-dark="../../assets/images/theme_dark.png" alt="Color theme icon"></li>
       </ul>
     </div>
   </nav>
   
-  <nav id="hamburger-nav">
+  <nav id="hamburger-nav" class="mobile_nav">
     <div class="logo">Ajit Satpute</div>
     <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
+      <div class="hamburger-icon" (click)="toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
       </div>
       <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        <li>
-          <img id="modetoggle2"
-          class="icon color-icon"
-          src="../../assets/images/theme_light.png"
-          src-light="../../assets/images/theme_light.png"
-          src-dark="../../assets/images/theme_dark.png" alt="Color theme icon"></li>
+        <li><a href="#about" (click)="toggleMenu()">About</a></li>
+        <li><a href="#experience" (click)="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" (click)="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
       </div>
     </div>
   </nav>
   <app-home></app-home>
   <footer>
-    <p>Copyright &#169; 2024. All Rights Reserved.</p>
+    <small>Copyright &#169; 2024. All Rights Reserved.</small>
   </footer>
 </div>
